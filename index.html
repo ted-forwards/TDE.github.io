@@ -20,6 +20,60 @@
 .case-media img{display:block;width:100%;max-height:350px;object-fit:contain;background:#edf3f6;border-radius:10px;border:1px solid #dce7ec}
 .case-media figcaption{font-size:12px;color:#597384;margin-top:5px}
 @media(max-width:560px){.visual.has-image{height:195px}.case-media img{max-height:230px}}
+
+/* Compact capabilities: consistent icon tiles and efficient vertical rhythm */
+.expertise{gap:14px;align-items:stretch}
+.expert{
+  display:grid;
+  grid-template-columns:40px minmax(0,1fr);
+  grid-template-rows:auto 1fr;
+  column-gap:14px;
+  row-gap:5px;
+  align-content:start;
+  padding:21px 19px;
+  border-radius:14px;
+  box-shadow:0 2px 10px rgba(23,50,70,.035);
+}
+.expert .symbol{
+  grid-column:1;
+  grid-row:1 / 3;
+  width:40px;
+  height:40px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0;
+  border-radius:11px;
+  background:#e7f5f3;
+  color:#0b847d;
+  font-family:Arial,system-ui,sans-serif;
+  font-size:23px;
+  line-height:1;
+}
+.expert h3{
+  grid-column:2;
+  grid-row:1;
+  margin:0;
+  font-size:16px;
+  line-height:1.35;
+  letter-spacing:-.015em;
+}
+.expert p{
+  grid-column:2;
+  grid-row:2;
+  margin:0;
+  font-size:13px;
+  line-height:1.55;
+  color:var(--muted);
+}
+@media(max-width:560px){
+  .expertise{gap:12px}
+  .expert{grid-template-columns:36px minmax(0,1fr);gap:4px 12px;padding:17px 15px;border-radius:13px}
+  .expert .symbol{height:36px;width:36px;border-radius:9px;font-size:21px}
+  .expert h3{font-size:16px}
+  .expert p{font-size:13px;line-height:1.5}
+}
+
 </style>
 </head>
 <body>
@@ -29,7 +83,7 @@
 <section class="hero" id="home"><div class="container hero-content"><div class="eyebrow"><span class="dot"></span>Municipal GIS • Enterprise Technology • Leadership</div><h1>Building GIS systems that <em>move municipalities forward.</em></h1><p class="lead">16 years of experience delivering municipal geospatial solutions—from enterprise GIS administration and authoritative asset data to operational dashboards, spatial analysis and modern web applications.</p><div class="actions"><a class="btn primary" href="#projects">Explore selected work <span aria-hidden="true">↗</span></a><a class="btn ghost" href="#architecture">Enterprise GIS expertise →</a></div><div class="metrics"><div class="metric"><strong>16</strong><span>Years in GIS</span></div><div class="metric"><strong>11.5</strong><span>ArcGIS Enterprise experience</span></div><div class="metric"><strong>Municipal</strong><span>Infrastructure • Data • Services</span></div></div></div></section>
 <section class="section" id="projects"><div class="container"><div class="section-head"><div><div class="kicker">Selected work</div><h2>Projects & solutions</h2><p class="section-desc">Selected municipal GIS dashboards, maps and workflows. Screenshots are illustrative examples of work; some applications are internal and are described without access links.</p></div></div><div class="filters" role="group" aria-label="Filter projects"><button class="filter" data-filter="all" aria-pressed="true">All projects</button><button class="filter" data-filter="strategic" aria-pressed="false">Strategic initiatives</button><button class="filter" data-filter="analytics" aria-pressed="false">Analytics</button><button class="filter" data-filter="assets" aria-pressed="false">Infrastructure</button><button class="filter" data-filter="services" aria-pressed="false">Services & public GIS</button></div><div class="projects" id="project-grid"></div></div></section>
 <section class="section dark-section" id="architecture"><div class="container"><div class="kicker" style="color:#79e5d5">Enterprise platform</div><h2>Architecture, reliability & governance</h2><p class="section-desc">Enterprise GIS is more than maps. It is a dependable, secure information platform supporting business-critical municipal services.</p><div class="arch"><div class="architecture" aria-label="Conceptual enterprise GIS architecture"><div class="archbox"><strong>GIS Applications & Consumers</strong><small>Web Maps · Dashboards · Field Maps · Hub · Business Systems</small></div><div class="connector" aria-hidden="true">↕</div><div class="archbox" style="border-color:#58bcae"><strong>ArcGIS Enterprise Platform</strong><small>Portal · Federated Server · Services · Identity & Access</small></div><div class="connector" aria-hidden="true">↕</div><div class="arch-bottom"><div class="archbox"><strong>Authoritative Data</strong><small>Enterprise geodatabases · Asset records</small></div><div class="archbox"><strong>Platform Controls</strong><small>Governance · Security · Monitoring</small></div></div><div class="smallnote">Illustrative architecture only; not a diagram of an employer's actual infrastructure.</div></div><div class="arch-points"><div class="arch-point"><span class="num">01</span><div><strong>Enterprise GIS administration</strong><p>ArcGIS Enterprise 11.5, Portal, Server, publishing, service dependencies, platform troubleshooting and performance.</p></div></div><div class="arch-point"><span class="num">02</span><div><strong>Authoritative spatial data</strong><p>Stewardship of parcels, address points, road networks, municipal boundaries and infrastructure datasets.</p></div></div><div class="arch-point"><span class="num">03</span><div><strong>Security & data governance</strong><p>Service inventory, public-access reviews, licensing constraints, data quality and responsible information sharing.</p></div></div><div class="arch-point"><span class="num">04</span><div><strong>Modernization & integration</strong><p>Standardized geospatial services, web GIS, Python automation and cross-departmental workflows.</p></div></div></div></div></div></section>
-<section class="section" id="expertise"><div class="container"><div class="kicker">Capabilities</div><h2>Technical depth. Operational perspective.</h2><p class="section-desc" style="margin-bottom:29px">A blend of hands-on GIS engineering, major municipal planning initiatives, public safety, municipal operations and collaborative technical leadership.</p><div class="expertise"><div class="expert"><div class="symbol">◈</div><h3>Enterprise GIS</h3><p>ArcGIS Enterprise, Portal, Server, ArcGIS Pro, service publishing, architecture and administration.</p></div><div class="expert"><div class="symbol">⌘</div><h3>Web GIS & applications</h3><p>Experience Builder, ArcGIS Dashboards, Hub, Field Maps and operational mapping workflows.</p></div><div class="expert"><div class="symbol">▤</div><h3>Spatial data engineering</h3><p>Enterprise geodatabases, data standards, SQL, Python automation and quality assurance.</p></div><div class="expert"><div class="symbol">⌁</div><h3>Infrastructure & assets</h3><p>Roads, stormwater, drainage, asset inventories and GIS support for municipal operations.</p></div><div class="expert"><div class="symbol">◇</div><h3>Analysis & decision support</h3><p>Collision analysis, traffic reporting, spatial patterns and management dashboards.</p></div><div class="expert"><div class="symbol">◎</div><h3>Strategic municipal planning</h3><p>Official Plan mapping and spatial data, Transportation Master Plan support, zoning, land use and transportation analysis.</p></div><div class="expert"><div class="symbol">✚</div><h3>NG911 & civic addressing</h3><p>Authoritative address points, road centreline and boundary data, data quality, standards alignment and emergency mapping coordination.</p></div><div class="expert"><div class="symbol">✳</div><h3>Leadership & service delivery</h3><p>Cross-departmental coordination, mentoring seasonal GIS staff and prioritizing operational requests.</p></div></div></div></section>
+<section class="section" id="expertise"><div class="container"><div class="kicker">Capabilities</div><h2>Technical depth. Operational perspective.</h2><p class="section-desc" style="margin-bottom:29px">A blend of hands-on GIS engineering, major municipal planning initiatives, public safety, municipal operations and collaborative technical leadership.</p><div class="expertise"><div class="expert"><div class="symbol">◈</div><h3>Enterprise GIS</h3><p>ArcGIS Enterprise, Portal, Server, ArcGIS Pro, service publishing, architecture and administration.</p></div><div class="expert"><div class="symbol">⌘</div><h3>Web GIS & applications</h3><p>Experience Builder, ArcGIS Dashboards, Hub, Field Maps and operational mapping workflows.</p></div><div class="expert"><div class="symbol">▤</div><h3>Spatial data engineering</h3><p>Enterprise geodatabases, data standards, SQL, Python automation and quality assurance.</p></div><div class="expert"><div class="symbol">⌁</div><h3>Infrastructure & assets</h3><p>Roads, stormwater, drainage, asset inventories and GIS support for municipal operations.</p></div><div class="expert"><div class="symbol">◇</div><h3>Analysis & decision support</h3><p>Collision analysis, traffic reporting, spatial patterns and management dashboards.</p></div><div class="expert"><div class="symbol">◎</div><h3>Strategic municipal planning</h3><p>Official Plan mapping and spatial data, Transportation Master Plan support, zoning, land use and transportation analysis.</p></div><div class="expert"><div class="symbol">✚</div><h3>NG911 & civic addressing</h3><p>Authoritative address points, road centreline and boundary data, data quality, standards alignment and emergency mapping coordination.</p></div><div class="expert"><div class="symbol">✦</div><h3>Leadership & service delivery</h3><p>Cross-departmental coordination, mentoring seasonal GIS staff and prioritizing operational requests.</p></div></div></div></section>
 <section class="section" id="about" style="background:#eaf1f4"><div class="container about"><div><div class="kicker">Professional background</div><h2>16 years in municipal GIS</h2><p>My work focuses on making geospatial information reliable, accessible and useful for the people who plan, maintain and manage municipal services.</p><p>At the County of Elgin, my responsibilities span enterprise GIS administration, authoritative datasets, municipal support, geospatial applications and modernization. I have played a significant role in GIS data and mapping for the County Official Plan and Transportation Master Plan, and in NG911 data preparation and coordination. I have also overseen and mentored summer GIS students over many years.</p><div class="timeline"><h3>GIS Coordinator · County of Elgin</h3><p>March 2020–present · Enterprise GIS operations, Official Plan and Transportation Master Plan GIS support, NG911, application delivery and data governance.</p></div><div class="timeline"><h3>GIS Analyst · Township of Malahide</h3><p>April 2008–March 2020 · Planning, GIS mapping, spatial data and municipal development support.</p></div><div class="timeline"><h3>Assistant Planning Technician (Co-op) · Municipality of Central Elgin</h3><p>June–September 2007 · Planning office support.</p></div><div class="actions"><a class="btn dark" href="#contact">Contact & résumé information →</a></div></div><aside class="profile"><div class="kicker">What I bring</div><h3>Enterprise-minded municipal GIS leadership</h3><ul><li>Deep familiarity with municipal business requirements and stakeholder needs</li><li>Hands-on ArcGIS Enterprise 11.5 platform experience</li><li>Technical guidance and mentoring of seasonal GIS staff</li><li>Significant GIS contributions to the Official Plan and Transportation Master Plan</li><li>NG911 addressing and road network data preparation</li><li>Experience bridging data, applications and operations</li><li>Practical approach to service reliability, governance and modernization</li></ul><p style="font-size:12px;color:#718792;margin-bottom:0">Portfolio descriptions reflect professional experience; individual project contributions can be discussed in an interview.</p></aside></div></section>
 <section class="contact" id="contact"><div class="container contact-inner"><div><div class="kicker" style="color:#7de5d6">Let's connect</div><h2>Interested in enterprise GIS leadership?</h2><p>I'm interested in opportunities involving geospatial strategy, enterprise platform modernization, GIS architecture and municipal technology leadership.</p><p style="font-size:13px">To add contact details: replace this text with your professional email or LinkedIn URL. Add an approved résumé PDF to the repository before linking it here.</p></div><a class="btn primary" href="https://github.com/ted-forwards" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a></div></section>
 </main><footer class="footer"><div class="container footrow"><span>© <span id="year"></span> Enterprise GIS Portfolio</span><span>Independent professional portfolio · Not an official County of Elgin website</span></div></footer>
