@@ -168,13 +168,36 @@
 @media(max-width:850px){.arch-refresh{grid-template-columns:1fr;gap:19px}.arch-summary{padding:0 3px}.arch-summary h3{margin-bottom:13px}}
 @media(max-width:560px){.arch-refresh{margin-top:22px;gap:20px}.platform-map{padding:14px;border-radius:14px}.platform-layer{grid-template-columns:46px minmax(0,1fr);gap:10px;padding:13px 11px;border-radius:10px}.platform-index{font-size:19px}.platform-index span{font-size:8px}.platform-layer strong{font-size:14px}.platform-layer p{font-size:11px}.platform-link{height:19px}.platform-controls{padding:12px}.control-tags span{font-size:10px}.arch-summary h3{font-size:24px}.priority-item{padding:13px 0}.priority-item strong{font-size:14px}.priority-item p{font-size:12px}}
 
+
+/* Final visual consistency and readability polish */
+.platform-layer,.platform-layer.platform-core{background:#194154;border-color:#416f7e}
+.platform-map .platform-layer:nth-of-type(3){border-color:#416f7e}
+.platform-layer:focus-within{outline:2px solid #79e5d5;outline-offset:2px}
+.platform-index{font-variant-numeric:tabular-nums}
+.platform-index span{overflow-wrap:anywhere}
+.project{transition:transform .18s ease,box-shadow .18s ease}
+@media(hover:hover){.project:hover{transform:translateY(-3px);box-shadow:0 14px 34px #17324619}}
+.project button:focus-visible{outline:3px solid #008e82;outline-offset:5px;border-radius:4px}
+.project .visual-tag{max-width:calc(100% - 34px);white-space:normal;line-height:1.4}
+.contact p.contact-fineprint{color:#a8c6d2;font-size:12px;line-height:1.55;margin:12px 0 0}
+@media(max-width:560px){
+  .project-body{padding:19px}
+  .project h3{font-size:19px}
+  .project p{font-size:13.5px;line-height:1.58}
+  .project .visual{height:180px}
+  .project .visual.has-image{height:190px}
+  .section-head{margin-bottom:24px}
+  .platform-layer,.platform-layer.platform-core{background:#194154;border-color:#416f7e}
+  .platform-index span{font-size:8px;letter-spacing:.07em}
+}
+
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
 <header class="topbar"><nav class="nav container" aria-label="Main navigation"><a class="brand" href="#home"><span class="brandmark" aria-hidden="true">◎</span><span>ENTERPRISE GIS <span style="color:#5bd2c4">/</span> PORTFOLIO</span></a><button class="menu" id="menu" aria-label="Toggle navigation" aria-expanded="false">☰</button><div class="navlinks" id="navlinks"><a href="#projects">Projects</a><a href="#architecture">Architecture</a><a href="#expertise">Expertise</a><a href="#about">About</a><a href="#contact" class="nav-cta">Connect ↗</a></div></nav></header>
 <main id="main">
-<section class="hero" id="home"><div class="container hero-content"><div class="eyebrow"><span class="dot"></span>Municipal GIS • Enterprise Technology • Leadership</div><h1>Building GIS systems that <em>move municipalities forward.</em></h1><p class="lead">16 years of experience delivering municipal geospatial solutions—from enterprise GIS administration and authoritative asset data to operational dashboards, spatial analysis and modern web applications.</p><div class="actions"><a class="btn primary" href="#projects">Explore selected work <span aria-hidden="true">↗</span></a><a class="btn ghost" href="#architecture">Enterprise GIS expertise →</a></div><div class="metrics"><div class="metric"><strong>16</strong><span>Years in GIS</span></div><div class="metric"><strong>11.5</strong><span>ArcGIS Enterprise experience</span></div><div class="metric"><strong>Municipal</strong><span>Infrastructure • Data • Services</span></div></div></div></section>
+<section class="hero" id="home"><div class="container hero-content"><div class="eyebrow"><span class="dot"></span>Municipal GIS • Enterprise Technology • Leadership</div><h1>Building GIS systems that <em>move municipalities forward.</em></h1><p class="lead">16 years of experience delivering municipal geospatial solutions—from enterprise GIS administration and authoritative asset data to operational dashboards, spatial analysis and modern web applications.</p><div class="actions"><a class="btn primary" href="#projects">Explore selected work <span aria-hidden="true">↗</span></a><a class="btn ghost" href="#architecture">Enterprise GIS expertise →</a></div><div class="metrics"><div class="metric"><strong>16</strong><span>Years in GIS</span></div><div class="metric"><strong>11.5</strong><span>Current ArcGIS Enterprise version</span></div><div class="metric"><strong>Municipal</strong><span>Infrastructure • Data • Services</span></div></div></div></section>
 <section class="section" id="projects"><div class="container"><div class="section-head"><div><div class="kicker">Selected work</div><h2>Projects & solutions</h2><p class="section-desc">Selected municipal GIS dashboards, maps and workflows. Screenshots are illustrative examples of work; some applications are internal and are described without access links.</p></div></div><div class="filters" role="group" aria-label="Filter projects"><button class="filter" data-filter="all" aria-pressed="true">All projects</button><button class="filter" data-filter="strategic" aria-pressed="false">Strategic initiatives</button><button class="filter" data-filter="analytics" aria-pressed="false">Analytics</button><button class="filter" data-filter="assets" aria-pressed="false">Infrastructure</button><button class="filter" data-filter="services" aria-pressed="false">Services & public GIS</button></div><div class="projects" id="project-grid"></div></div></section>
 <section class="section dark-section" id="architecture">
 <div class="container">
@@ -182,20 +205,20 @@
   <h2>How the enterprise GIS fits together</h2>
   <p class="section-desc">A practical service-based model connecting trusted spatial data with the applications and municipal teams that use it.</p>
   <div class="arch-refresh">
-    <div class="platform-map" aria-label="Illustrative GIS architecture with three connected layers and cross-cutting controls">
+    <div class="platform-map" aria-label="Conceptual enterprise GIS architecture: authoritative data, enterprise platform, then user applications">
       <div class="platform-layer">
-        <div class="platform-index">03 <span>USE</span></div>
-        <div><strong>Applications &amp; business systems</strong><p>Web maps · Dashboards · Field Maps · Hub · integrations</p></div>
+        <div class="platform-index">01 <span>DATA</span></div>
+        <div><strong>Authoritative geospatial data</strong><p>Parcels · civic addresses · roads · municipal assets</p></div>
       </div>
       <div class="platform-link" aria-hidden="true"><span></span></div>
-      <div class="platform-layer platform-core">
-        <div class="platform-index">02 <span>SERVE</span></div>
+      <div class="platform-layer">
+        <div class="platform-index">02 <span>PLATFORM</span></div>
         <div><strong>ArcGIS Enterprise 11.5</strong><p>Portal · federated services · publishing · access management</p></div>
       </div>
       <div class="platform-link" aria-hidden="true"><span></span></div>
       <div class="platform-layer">
-        <div class="platform-index">01 <span>TRUST</span></div>
-        <div><strong>Authoritative geospatial data</strong><p>Parcels · civic addresses · roads · municipal assets</p></div>
+        <div class="platform-index">03 <span>DELIVERY</span></div>
+        <div><strong>Applications &amp; business systems</strong><p>Web maps · Dashboards · Field Maps · Hub · integrations</p></div>
       </div>
       <div class="platform-controls">
         <span class="controls-title">Across every layer</span>
@@ -281,14 +304,14 @@
   </div>
 </div>
 </section>
-<section class="contact" id="contact"><div class="container contact-inner"><div><div class="kicker" style="color:#7de5d6">Let's connect</div><h2>Interested in enterprise GIS leadership?</h2><p>I'm interested in opportunities involving geospatial strategy, enterprise platform modernization, GIS architecture and municipal technology leadership.</p><p style="font-size:13px">To add contact details: replace this text with your professional email or LinkedIn URL. Add an approved résumé PDF to the repository before linking it here.</p></div><a class="btn primary" href="https://github.com/ted-forwards" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a></div></section>
+<section class="contact" id="contact"><div class="container contact-inner"><div><div class="kicker" style="color:#7de5d6">Let's connect</div><h2>Interested in enterprise GIS leadership?</h2><p>I'm interested in opportunities involving geospatial strategy, enterprise platform modernization, GIS architecture and municipal technology leadership.</p><p style="font-size:13px">Connect through my GitHub profile to explore the portfolio repository and professional GIS projects.</p></div><a class="btn primary" href="https://github.com/ted-forwards" target="_blank" rel="noopener noreferrer">View GitHub profile ↗</a></div></section>
 </main><footer class="footer"><div class="container footrow"><span>© <span id="year"></span> Enterprise GIS Portfolio</span><span>Independent professional portfolio · Not an official County of Elgin website</span></div></footer>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true"><div class="modal-panel"><button class="close" id="close" aria-label="Close project details">×</button><div class="kicker" id="modal-category"></div><h2 id="modal-title"></h2><div id="modal-content"></div></div></div>
 <script>
 const icons={car:'<path d="M18 42h64l-8-22H27zM15 42v24h70V42M25 66v11h12V66M63 66v11h12V66"/><circle cx="31" cy="56" r="4"/><circle cx="69" cy="56" r="4"/><path d="M42 20h18"/>',pipe:'<path d="M14 23h31v20h24v30h17M14 23v22h15v20h40M69 43v22M9 18h10v10H9zM81 68h10v10H81z"/><circle cx="45" cy="43" r="6"/>',truck:'<path d="M9 35h53v36H9zM62 47h17l12 13v11H62zM70 47v13h20"/><circle cx="27" cy="73" r="8"/><circle cx="74" cy="73" r="8"/><path d="M19 26h29M24 18h20"/>',clipboard:'<rect x="20" y="18" width="60" height="69" rx="5"/><path d="M39 18v-7h22v7M32 43l5 5 10-12M53 44h17M32 65l5 5 10-12M53 66h17"/>',map:'<path d="M13 24l24-10 27 10 23-10v62L64 86 37 76 13 86zM37 14v62M64 24v62"/><circle cx="52" cy="44" r="8"/><path d="M52 52v10"/>',traffic:'<path d="M25 88L43 12h14l18 76M37 63h26M44 38h12M50 17v10"/><rect x="8" y="26" width="18" height="39" rx="6"/><circle cx="17" cy="36" r="3"/><circle cx="17" cy="46" r="3"/><circle cx="17" cy="56" r="3"/>',leaf:'<path d="M18 79c10-44 29-60 66-60 0 41-16 65-50 65-8 0-12-2-16-5zM18 79c20-27 39-41 62-51M38 59l-2-23M58 43l17 3"/>',cube:'<path d="M50 10l34 20v40L50 90 16 70V30zM16 30l34 20 34-20M50 50v40"/><path d="M50 10v20M16 70l17-10M84 70L67 60"/>'};
 const projects=[
  {id:'official-plan',title:'County Official Plan',category:'strategic',label:'Land-use policy & planning',icon:'map',tone:'#277a86',summary:'Significant GIS contributions to County Official Plan data and schedules, including transportation and infrastructure mapping.',problem:'Long-range land-use policy work depends on consistent, defensible geographic information and clear cartography.',approach:'Contributed to the preparation and maintenance of official plan spatial data, planning maps and supporting geographic analysis. Worked with parcel, zoning and land-use information to support planning deliverables.',stack:'ArcGIS Pro · Planning GIS · Spatial Data QA/QC',impact:'Supported the geographic information foundation for municipal land-use policy and planning. Specific planning recommendations and approval decisions are not claimed.'},
- {id:'transportation-plan',title:'Transportation Master Plan',category:'strategic',label:'Long-range transportation',icon:'traffic',tone:'#316b8a',summary:'GIS support for transportation network data and analysis contributing to Transportation Master Plan work; no master-plan image is included.',problem:'Transportation planning requires reliable road and infrastructure datasets and accessible geographic evidence.',approach:'Contributed transportation GIS datasets, mapping and spatial analysis supporting the Transportation Master Plan, alongside road network, traffic and infrastructure-related work.',stack:'ArcGIS Pro · Road Networks · Transportation Analysis',impact:'Supported evidence-based long-range transportation planning; project ownership and policy decisions are not implied.'},
+ {id:'transportation-plan',title:'Transportation Master Plan',category:'strategic',label:'Long-range transportation',icon:'traffic',tone:'#316b8a',summary:'Transportation network data and GIS analysis supporting ongoing master planning work.',problem:'Transportation planning requires reliable road and infrastructure datasets and accessible geographic evidence.',approach:'Contributed transportation GIS datasets, mapping and spatial analysis supporting the Transportation Master Plan, alongside road network, traffic and infrastructure-related work.',stack:'ArcGIS Pro · Road Networks · Transportation Analysis',impact:'Contributes geographic evidence to long-range transportation planning; a finished Transportation Master Plan deliverable is not shown.'},
  {id:'ng911',title:'Next Generation 911 (NG911)',category:'strategic',label:'Critical public safety data',icon:'map',tone:'#226e78',summary:'Technical GIS coordination and authoritative data preparation for NG911 readiness.',problem:'Emergency response systems require accurate, interoperable civic addresses, road centreline and boundary information.',approach:'Prepared and maintained civic addressing, road centreline and boundary GIS information; supported schema alignment, data quality review and technical coordination for evolving NG911 requirements.',stack:'ArcGIS Enterprise · Addressing · Road Centreline Data · NG911',impact:'Advances the quality and readiness of authoritative GIS data supporting emergency response workflows.'},
 
 {id:'collisions',title:'Collision & Intersection Safety',category:'analytics',label:'Road safety analytics',icon:'car',tone:'#1a617b',summary:'Two complementary dashboards exploring historical collisions, deer-related trends and intersection safety.',problem:'Historical collision information needed to be organized and presented in a form suitable for practical road safety analysis.',approach:'Standardized annual collision datasets and created collision-level and intersection-level views, including mapped clusters, annual trends, intersection summaries and review lists.',stack:'ArcGIS Pro · Enterprise Geodatabase · Dashboards · Experience Builder · Python',impact:'Supports exploration of collision patterns and road safety questions. Quantified operational outcomes are not claimed.'},
@@ -297,8 +320,7 @@ const projects=[
 {id:'requests',title:'GIS Service & Activity Management',category:'services',label:'Service delivery',icon:'clipboard',tone:'#367d7b',summary:'GIS request intake and assignment workflows combined with activity reporting across municipal partners.',problem:'GIS requests benefit from transparent intake, status tracking and clear responsibility.',approach:'Configured GIS request forms and assignment workflows, and organized activity data for dashboard reporting by category, organization, business unit and status.',stack:'ArcGIS Solutions · ArcGIS Online · Dashboards · Forms · Reporting',impact:'Creates a cohesive view of GIS requests, activities and service demand.'},
 {id:'planning',title:'Planning Resources',category:'services',label:'Public mapping',icon:'map',tone:'#567a89',summary:'Accessible planning and zoning information through interactive municipal web mapping.',problem:'Planning information needs to be understandable and available to staff and public users.',approach:'Delivered web GIS views and map services to make planning-related spatial information easier to explore.',stack:'ArcGIS Enterprise · Web GIS · Authoritative Spatial Data',impact:'Improves access to planning-related spatial information.'},
 {id:'traffic',title:'Traffic Volume',category:'analytics',label:'Transportation data',icon:'traffic',tone:'#286889',summary:'Interactive traffic count information supporting transportation planning and analysis.',problem:'Traffic volume data is more useful when it can be explored spatially and compared over time.',approach:'Organized traffic count information and built map-based reporting and analysis views.',stack:'ArcGIS Dashboards · Web Maps · Transportation Data',impact:'Makes traffic trends easier to review in geographic context.'},
-{id:'phragmites',title:'Phragmites Spray Zones',category:'assets',label:'Environmental operations',icon:'leaf',tone:'#477b6b',summary:'Spatial tools to support identification and management of invasive vegetation.',problem:'Field operations require geographic awareness of treatment areas and related observations.',approach:'Created spatial views and analysis products to support environmental treatment planning and reporting.',stack:'ArcGIS Pro · Web GIS · Spatial Analysis',impact:'Supports spatial awareness of invasive species management activities.'},
-{id:'3d',title:'3D Viewer',category:'services',label:'3D visualization',icon:'cube',tone:'#426d93',summary:'Interactive three-dimensional exploration of geographic and built environments.',problem:'Some planning and infrastructure questions benefit from a three-dimensional perspective.',approach:'Used modern web GIS visualization to help users explore spatial context in 3D.',stack:'ArcGIS Web GIS · 3D Scenes · Visualization',impact:'Adds an accessible visual perspective to geographic information.'}
+{id:'phragmites',title:'Phragmites Spray Zones',category:'assets',label:'Environmental operations',icon:'leaf',tone:'#477b6b',summary:'Spatial tools to support identification and management of invasive vegetation.',problem:'Field operations require geographic awareness of treatment areas and related observations.',approach:'Created spatial views and analysis products to support environmental treatment planning and reporting.',stack:'ArcGIS Pro · Web GIS · Spatial Analysis',impact:'Supports spatial awareness of invasive species management activities.'}
 ];
 const projectMedia={
  'collisions':[{file:'Screenshot 2026-11-07 000832.png',caption:'Collision Explorer dashboard'},{file:'Screenshot 2026-11-07 000955.png',caption:'Intersection Safety dashboard'}],
