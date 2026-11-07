@@ -74,6 +74,73 @@
   .expert p{font-size:13px;line-height:1.5}
 }
 
+
+/* Professional background & leadership refresh */
+.background-section{background:#eaf1f4}
+.background-header{display:flex;align-items:flex-end;justify-content:space-between;gap:38px;margin-bottom:29px}
+.background-header>div:first-child{max-width:790px}
+.background-header h2{max-width:750px;margin:10px 0 13px}
+.background-highlight{flex:0 0 162px;min-height:143px;background:#113749;color:white;border-radius:17px;padding:18px 20px;display:flex;flex-direction:column;justify-content:center;gap:4px;border:1px solid #2f6470}
+.background-highlight strong{font-size:54px;letter-spacing:-.065em;line-height:1;color:#8de7d9}
+.background-highlight span{font-size:12px;line-height:1.4;color:#c0dae2}
+.leadership-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;margin-bottom:32px}
+.leadership-card{background:white;border:1px solid #d8e5e9;border-radius:16px;padding:23px 22px 24px;box-shadow:0 8px 25px rgba(22,52,66,.035);border-top:3px solid #1bb4a2}
+.leadership-marker{display:block;color:#008d81;font-size:10px;letter-spacing:.16em;font-weight:850;margin-bottom:14px}
+.leadership-card h3{font-size:19px;line-height:1.32;letter-spacing:-.02em;margin:0 0 10px;color:#183648}
+.leadership-card p{font-size:13.5px;line-height:1.65;color:#586f7b;margin:0}
+.career-panel{background:white;border:1px solid #d6e4e9;border-radius:19px;padding:31px 34px 16px;box-shadow:0 10px 28px rgba(20,58,74,.04)}
+.career-heading{display:flex;align-items:end;justify-content:space-between;gap:16px;padding-bottom:22px;border-bottom:1px solid #e2ebee}
+.career-heading h3{font-size:clamp(22px,3vw,29px);letter-spacing:-.035em;line-height:1.25;margin:8px 0 0}
+.career-note{font-size:11px;color:#65808a;white-space:nowrap}
+.career-list{padding:4px 0}
+.career-role{display:grid;grid-template-columns:24px minmax(0,1fr);gap:17px}
+.career-rail{position:relative;display:flex;justify-content:center}
+.career-rail:before{content:"";position:absolute;top:28px;bottom:-8px;width:2px;background:#d5e8e6}
+.career-role:last-child .career-rail:before{display:none}
+.career-dot{width:14px;height:14px;background:#16ad9b;border:3px solid #d9f3ed;border-radius:50%;margin-top:29px;z-index:1}
+.career-role:not(:first-child) .career-dot{background:#8baab0;border-color:#edf3f4}
+.career-content{padding:21px 0 24px;border-bottom:1px solid #e8eef0}
+.career-role:last-child .career-content{border-bottom:none}
+.career-topline{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.career-topline h4{font-size:18px;letter-spacing:-.015em;margin:0;color:#173246;line-height:1.35}
+.career-date{font-size:12px;font-weight:750;color:#416c75;background:#e8f4f3;padding:4px 10px;border-radius:99px;white-space:nowrap}
+.career-employer{font-size:14px;color:#008e82;font-weight:750;margin:3px 0 8px}
+.career-content p{font-size:13.5px;line-height:1.65;color:#5b7180;margin:0;max-width:850px}
+.career-coop{font-size:13px;font-weight:500;color:#5e7884}
+.background-footer{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:27px}
+.background-footer p{font-size:14px;color:#4d6875;max-width:670px;margin:0}
+.background-footer .btn{white-space:nowrap}
+@media(max-width:900px){.leadership-grid{grid-template-columns:1fr 1fr}.leadership-card:last-child{grid-column:1/-1}.background-header{align-items:start}.background-footer{align-items:flex-start;flex-direction:column}}
+@media(max-width:600px){
+.background-header{display:block;margin-bottom:20px}
+.background-header h2{font-size:clamp(29px,8vw,37px)}
+.background-header .section-desc{font-size:14px;line-height:1.65}
+.background-highlight{margin-top:20px;min-height:auto;padding:13px 17px;display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:16px;border-radius:13px}
+.background-highlight strong{font-size:43px}
+.background-highlight span{font-size:12px;max-width:180px}
+.leadership-grid{grid-template-columns:1fr;gap:11px;margin-bottom:22px}
+.leadership-card:last-child{grid-column:auto}
+.leadership-card{padding:17px 18px;border-radius:13px}
+.leadership-marker{margin-bottom:7px;font-size:10px}
+.leadership-card h3{font-size:17px;margin-bottom:5px}
+.leadership-card p{font-size:13px;line-height:1.55}
+.career-panel{padding:21px 18px 8px;border-radius:14px}
+.career-heading{display:block;padding-bottom:15px}
+.career-heading h3{font-size:23px;margin-bottom:7px}
+.career-note{white-space:normal}
+.career-role{grid-template-columns:17px minmax(0,1fr);gap:10px}
+.career-dot{margin-top:24px;width:12px;height:12px}
+.career-content{padding:17px 0 19px}
+.career-topline{display:block}
+.career-topline h4{font-size:16px;margin-bottom:7px}
+.career-date{display:inline-block;font-size:11px;padding:3px 9px}
+.career-employer{font-size:13px;margin:7px 0 6px}
+.career-content p{font-size:12.5px;line-height:1.55}
+.background-footer{margin-top:21px;gap:15px}
+.background-footer p{font-size:13px}
+.background-footer .btn{white-space:normal}
+}
+
 </style>
 </head>
 <body>
@@ -84,7 +151,73 @@
 <section class="section" id="projects"><div class="container"><div class="section-head"><div><div class="kicker">Selected work</div><h2>Projects & solutions</h2><p class="section-desc">Selected municipal GIS dashboards, maps and workflows. Screenshots are illustrative examples of work; some applications are internal and are described without access links.</p></div></div><div class="filters" role="group" aria-label="Filter projects"><button class="filter" data-filter="all" aria-pressed="true">All projects</button><button class="filter" data-filter="strategic" aria-pressed="false">Strategic initiatives</button><button class="filter" data-filter="analytics" aria-pressed="false">Analytics</button><button class="filter" data-filter="assets" aria-pressed="false">Infrastructure</button><button class="filter" data-filter="services" aria-pressed="false">Services & public GIS</button></div><div class="projects" id="project-grid"></div></div></section>
 <section class="section dark-section" id="architecture"><div class="container"><div class="kicker" style="color:#79e5d5">Enterprise platform</div><h2>Architecture, reliability & governance</h2><p class="section-desc">Enterprise GIS is more than maps. It is a dependable, secure information platform supporting business-critical municipal services.</p><div class="arch"><div class="architecture" aria-label="Conceptual enterprise GIS architecture"><div class="archbox"><strong>GIS Applications & Consumers</strong><small>Web Maps · Dashboards · Field Maps · Hub · Business Systems</small></div><div class="connector" aria-hidden="true">↕</div><div class="archbox" style="border-color:#58bcae"><strong>ArcGIS Enterprise Platform</strong><small>Portal · Federated Server · Services · Identity & Access</small></div><div class="connector" aria-hidden="true">↕</div><div class="arch-bottom"><div class="archbox"><strong>Authoritative Data</strong><small>Enterprise geodatabases · Asset records</small></div><div class="archbox"><strong>Platform Controls</strong><small>Governance · Security · Monitoring</small></div></div><div class="smallnote">Illustrative architecture only; not a diagram of an employer's actual infrastructure.</div></div><div class="arch-points"><div class="arch-point"><span class="num">01</span><div><strong>Enterprise GIS administration</strong><p>ArcGIS Enterprise 11.5, Portal, Server, publishing, service dependencies, platform troubleshooting and performance.</p></div></div><div class="arch-point"><span class="num">02</span><div><strong>Authoritative spatial data</strong><p>Stewardship of parcels, address points, road networks, municipal boundaries and infrastructure datasets.</p></div></div><div class="arch-point"><span class="num">03</span><div><strong>Security & data governance</strong><p>Service inventory, public-access reviews, licensing constraints, data quality and responsible information sharing.</p></div></div><div class="arch-point"><span class="num">04</span><div><strong>Modernization & integration</strong><p>Standardized geospatial services, web GIS, Python automation and cross-departmental workflows.</p></div></div></div></div></div></section>
 <section class="section" id="expertise"><div class="container"><div class="kicker">Capabilities</div><h2>Technical depth. Operational perspective.</h2><p class="section-desc" style="margin-bottom:29px">A blend of hands-on GIS engineering, major municipal planning initiatives, public safety, municipal operations and collaborative technical leadership.</p><div class="expertise"><div class="expert"><div class="symbol">◈</div><h3>Enterprise GIS</h3><p>ArcGIS Enterprise, Portal, Server, ArcGIS Pro, service publishing, architecture and administration.</p></div><div class="expert"><div class="symbol">⌘</div><h3>Web GIS & applications</h3><p>Experience Builder, ArcGIS Dashboards, Hub, Field Maps and operational mapping workflows.</p></div><div class="expert"><div class="symbol">▤</div><h3>Spatial data engineering</h3><p>Enterprise geodatabases, data standards, SQL, Python automation and quality assurance.</p></div><div class="expert"><div class="symbol">⌁</div><h3>Infrastructure & assets</h3><p>Roads, stormwater, drainage, asset inventories and GIS support for municipal operations.</p></div><div class="expert"><div class="symbol">◇</div><h3>Analysis & decision support</h3><p>Collision analysis, traffic reporting, spatial patterns and management dashboards.</p></div><div class="expert"><div class="symbol">◎</div><h3>Strategic municipal planning</h3><p>Official Plan mapping and spatial data, Transportation Master Plan support, zoning, land use and transportation analysis.</p></div><div class="expert"><div class="symbol">✚</div><h3>NG911 & civic addressing</h3><p>Authoritative address points, road centreline and boundary data, data quality, standards alignment and emergency mapping coordination.</p></div><div class="expert"><div class="symbol">✦</div><h3>Leadership & service delivery</h3><p>Cross-departmental coordination, mentoring seasonal GIS staff and prioritizing operational requests.</p></div></div></div></section>
-<section class="section" id="about" style="background:#eaf1f4"><div class="container about"><div><div class="kicker">Professional background</div><h2>16 years in municipal GIS</h2><p>My work focuses on making geospatial information reliable, accessible and useful for the people who plan, maintain and manage municipal services.</p><p>At the County of Elgin, my responsibilities span enterprise GIS administration, authoritative datasets, municipal support, geospatial applications and modernization. I have played a significant role in GIS data and mapping for the County Official Plan and Transportation Master Plan, and in NG911 data preparation and coordination. I have also overseen and mentored summer GIS students over many years.</p><div class="timeline"><h3>GIS Coordinator · County of Elgin</h3><p>March 2020–present · Enterprise GIS operations, Official Plan and Transportation Master Plan GIS support, NG911, application delivery and data governance.</p></div><div class="timeline"><h3>GIS Analyst · Township of Malahide</h3><p>April 2008–March 2020 · Planning, GIS mapping, spatial data and municipal development support.</p></div><div class="timeline"><h3>Assistant Planning Technician (Co-op) · Municipality of Central Elgin</h3><p>June–September 2007 · Planning office support.</p></div><div class="actions"><a class="btn dark" href="#contact">Contact & résumé information →</a></div></div><aside class="profile"><div class="kicker">What I bring</div><h3>Enterprise-minded municipal GIS leadership</h3><ul><li>Deep familiarity with municipal business requirements and stakeholder needs</li><li>Hands-on ArcGIS Enterprise 11.5 platform experience</li><li>Technical guidance and mentoring of seasonal GIS staff</li><li>Significant GIS contributions to the Official Plan and Transportation Master Plan</li><li>NG911 addressing and road network data preparation</li><li>Experience bridging data, applications and operations</li><li>Practical approach to service reliability, governance and modernization</li></ul><p style="font-size:12px;color:#718792;margin-bottom:0">Portfolio descriptions reflect professional experience; individual project contributions can be discussed in an interview.</p></aside></div></section>
+<section class="section background-section" id="about">
+<div class="container">
+  <div class="background-header">
+    <div>
+      <div class="kicker">Professional background & leadership</div>
+      <h2>Experience built across municipal GIS.</h2>
+      <p class="section-desc">16 years combining enterprise GIS operations, municipal planning, public safety data and practical technical leadership—connecting authoritative information with the people and services that depend on it.</p>
+    </div>
+    <div class="background-highlight" aria-label="16 years of municipal GIS experience"><strong>16</strong><span>Years of municipal GIS experience</span></div>
+  </div>
+
+  <div class="leadership-grid" aria-label="Areas of professional contribution">
+    <article class="leadership-card">
+      <span class="leadership-marker">01 / PLATFORM</span>
+      <h3>Enterprise GIS stewardship</h3>
+      <p>Administering ArcGIS Enterprise 11.5, supporting dependable services, maintaining authoritative datasets and improving access, data quality and governance.</p>
+    </article>
+    <article class="leadership-card">
+      <span class="leadership-marker">02 / INITIATIVES</span>
+      <h3>Municipal programs & public safety</h3>
+      <p>Significant GIS contributions to Official Plan data and mapping, Transportation Master Plan support, and NG911 addressing, road centreline and boundary data preparation.</p>
+    </article>
+    <article class="leadership-card">
+      <span class="leadership-marker">03 / PEOPLE</span>
+      <h3>Technical guidance & mentorship</h3>
+      <p>Overseeing and mentoring seasonal GIS students over many years, coordinating technical priorities and supporting County departments and lower-tier municipalities.</p>
+    </article>
+  </div>
+
+  <div class="career-panel">
+    <div class="career-heading">
+      <div><div class="kicker">Career progression</div><h3>From municipal planning to enterprise GIS leadership</h3></div>
+      <span class="career-note">Ontario municipal government</span>
+    </div>
+    <div class="career-list">
+      <article class="career-role">
+        <div class="career-rail"><span class="career-dot"></span></div>
+        <div class="career-content">
+          <div class="career-topline"><h4>GIS Coordinator</h4><span class="career-date">Mar 2020 – Present</span></div>
+          <div class="career-employer">County of Elgin</div>
+          <p>Enterprise GIS administration and modernization; authoritative spatial data; web applications and dashboards; NG911; major planning initiatives; engineering and municipal service delivery.</p>
+        </div>
+      </article>
+      <article class="career-role">
+        <div class="career-rail"><span class="career-dot"></span></div>
+        <div class="career-content">
+          <div class="career-topline"><h4>GIS Analyst</h4><span class="career-date">Apr 2008 – Mar 2020</span></div>
+          <div class="career-employer">Township of Malahide</div>
+          <p>GIS data maintenance, planning and development mapping, municipal analysis and geographic information support for local government operations.</p>
+        </div>
+      </article>
+      <article class="career-role">
+        <div class="career-rail"><span class="career-dot"></span></div>
+        <div class="career-content">
+          <div class="career-topline"><h4>Assistant Planning Technician <span class="career-coop">(Co-op)</span></h4><span class="career-date">Jun – Sep 2007</span></div>
+          <div class="career-employer">Municipality of Central Elgin</div>
+          <p>Early municipal planning office experience supporting mapping and planning-related workflows.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="background-footer">
+    <p>My focus is making municipal geospatial systems reliable, accessible and genuinely useful—from platform architecture to the maps, applications and decisions they support.</p>
+    <a class="btn dark" href="#contact">Connect about GIS leadership <span aria-hidden="true">→</span></a>
+  </div>
+</div>
+</section>
 <section class="contact" id="contact"><div class="container contact-inner"><div><div class="kicker" style="color:#7de5d6">Let's connect</div><h2>Interested in enterprise GIS leadership?</h2><p>I'm interested in opportunities involving geospatial strategy, enterprise platform modernization, GIS architecture and municipal technology leadership.</p><p style="font-size:13px">To add contact details: replace this text with your professional email or LinkedIn URL. Add an approved résumé PDF to the repository before linking it here.</p></div><a class="btn primary" href="https://github.com/ted-forwards" target="_blank" rel="noopener noreferrer">GitHub profile ↗</a></div></section>
 </main><footer class="footer"><div class="container footrow"><span>© <span id="year"></span> Enterprise GIS Portfolio</span><span>Independent professional portfolio · Not an official County of Elgin website</span></div></footer>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true"><div class="modal-panel"><button class="close" id="close" aria-label="Close project details">×</button><div class="kicker" id="modal-category"></div><h2 id="modal-title"></h2><div id="modal-content"></div></div></div>
